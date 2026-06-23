@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedu's Vinis - Cadastro</title>
+    <link rel="shortcut icon" href="/assests/logo-transp.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="sobrenos.html">Sobre nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <ul class="end-header">
+            <li><a class="cadastro" href="cadastro.html">Cadastre o seu Vinil Aqui!</a></li>
+        </ul>
+    </header>
+    <hr style="color: #735340;">
+     <nav>
+        <img class="img-nav" src="assests/logo_nome.png" onclick="location.href='index.html'"></nav>
+    <div id="container-cad">
+        <h1 class="tela-cadastro">Cadastro de Discos de Vinil</h1>
+        
+        <form id="product-form">
+            <input type="text" id="product-name" placeholder="Nome do Álbum" required>
+            <input type="text" id="product-artist" placeholder="Nome do Artista/Banda" required>
+            <input type="number" id="product-price" step="0.01" placeholder="Preço (Ex: 99.90)" required>
+            <button type="submit">Cadastrar Vinil</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Álbum</th>
+                    <th>Artista</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                </tbody>
+        </table>
+    </div>
+</body>
+</html>
